@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- input : 사용자에게 입력받을 데이터 양식
+        autocomplete, autofocus  
+        maxlength : 최대 글자입력수
+        required : 경고문
+        placeholder : 힌트 ?  (value와 함께 사용 불가)
+        value : 기본값설정
+        readonly : 수정불가 , 읽기전용
+        step : 
+        name ( 가장중요 )
+        checkbox : 여러개 선택가능
+        radio : 중복 선택 불가 하나만 선택가능
+        novalidate : reqired 같은 유효성 검증 무시 
+        hidden : 사용자에게 숨기지만 소스에선 보임
+    -->
+
+    <form action="">
+      <input
+        type="text"
+        autofocus
+        maxlength="8"
+        minlength="4"
+        required
+        placeholder="이름입력"
+        value="홍길동"
+        readonly
+      />
+      <input type="number" max="10" min="1" value="5" step="2" />
+      <input type="checkbox" name="fruits" id="" />
+      <label for="">사과</label>
+      <input type="checkbox" name="fruits" id="" checked />
+      <label for="">바나나</label>
+      <input type="checkbox" name="fruits" id="" />
+      <label for="">수박</label>
+      <input type="checkbox" name="fruits" id="" />
+      <label for="">딸기</label>
+      <input type="radio" name="gender" id="" checked />
+      <label for="">남</label>
+      <input type="radio" name="gender" id="" />
+      <label for="">여</label>
+
+      <div>
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="pwd">비밀번호</label>
+        <input type="password" name="pwd" id="pwd" required />
+      </div>
+      <div>
+        <label for="">숨겨진값</label>
+        <input type="hidden" name="num" value="10" />
+      </div>
+      <div>
+        <label for="">색상</label>
+        <input type="color" name="" id="" />
+      </div>
+      <div>
+        <label for="">전화번호</label>
+        <input type="tel" name="" id="" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" />
+      </div>
+      <div>
+        <label for="">url</label>
+        <input type="url" name="" id="" />
+      </div>
+      <div>
+        <label for="">range</label>
+        <input type="range" name="" id="" min="1" max="10" step="2" />
+      </div>
+      <div>
+        <label for="">search</label>
+        <input type="search" name="" id="" />
+      </div>
+      <div>
+        <label for="">comment</label>
+        <textarea name="" id="" cols="30" rows="10">
+대우학원에 하고싶은말:</textarea
+        >
+      </div>
+      <button type="submit">전송</button>
+    </form>
+  </body>
+</html>
